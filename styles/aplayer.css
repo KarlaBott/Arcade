@@ -1,0 +1,82 @@
+.box-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 2em;
+}
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: rgba(88, 246, 232, .8);
+  border: 5px solid black;
+  text-align: center;
+  padding: 5px;
+  color: black;
+}
+
+.box3 {
+  height: 200px;
+  width: 200px;
+}
+.box3::before {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("images/catface.jpg");
+  background-size: cover;
+}
+
+.cimg {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("images/catface.jpg");
+  background-size: cover;
+  background-color: rgba(255,255,255,.1);
+}
+
+.letc {
+  position: relative;
+  opacity: .5;
+  transition: .5s ease;
+  background-color: rgba(259, 67, 95, 0.7);
+  overflow:hidden;
+}
+
+.cat-board {
+  margin-top: 0;
+  font-size: 4em;
+  color: red;
+  font-weight: bolder;
+  opacity: .5;
+}
+
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+.chartreuse {
+  background-color: chartreuse;
+}
+.gray {
+  background-color: gray;
+}
+
+.dropdown {
+  margin-top: 20px;
+  margin-bottom: 150px;
+  text-align: center;
+  overflow: auto;
+  background-color: lightsalmon;
+}
+
+ul, input, select, label {
+  font-size: 1rem;
+  font-weight: bolder;
+  font-style: italic;
+  padding: 4px 4px;
+}

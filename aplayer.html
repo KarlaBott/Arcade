@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aplayer</title>
+  <link rel="stylesheet" href="styles/shared.css">
+  <link rel="stylesheet" href="styles/aplayer.css">
+  <script type="text/javascript" src='jsfiles/aplayer.js'></script>
+  <style>
+    #bgimage {
+      background-image: url('images/catface.jpg');
+    }
+  </style>
+</head>
+
+<body class="bg" id="bgimage">
+  <section class="game-title">
+    <h1>Player Info</h1>
+  </section>
+  <section class="active-player">Current player is: X</section>
+  <section class="box-display">
+    <div class="box" id="plbox">P 1</div>
+    <div class="box" id="p2box">P 2</div>
+    <div class="box box3" id="p3box">P 3<br>P 3<br>P 3<br>
+      <div id="inBox3"></div>
+    </div>
+  </section>
+
+  <section class="banner">-</section>
+  <section class="action-buttons">
+    <button id="btnReset">RESET Game</button>
+    <a href="index.html">Return To Arcade</a>
+  </section>
+
+  <ul>
+    <li>
+      <span>Player 1 name: &nbsp;&nbsp;</span>
+      <input type="text" id="p1name" required minlength="1" onfocus="this.value=''" maxlength="15" size="15"
+        value="Computer">
+    </li>
+    <li>
+      <span>Player 2 name: &nbsp;&nbsp;</span>
+      <input type="text" id="p2name" required minlength="1" onfocus="this.value=''" maxlength="15" size="15"
+        value="Computer">
+    </li>
+    <li>
+      <div class="color1"></div>
+      <div class="dropdown">
+        <label>Player 1 color:</label><br />
+        <select id="select1">
+          <option value="red">Red</option>
+          <option value="yellow">Yellow</option>
+          <option value="chartreuse">Bright Green</option>
+          <option value="gray">Gray</option>
+        </select>
+      </div>
+    </li>
+    <li>
+      <div class="color2"></div>
+      <div class="dropdown">
+        <label>Player 2 color:</label><br />
+        <select id="select2">
+          <option value="red">Red</option>
+          <option value="yellow">Yellow</option>
+          <option value="chartreuse">Bright Green</option>
+          <option value="gray">Gray</option>
+        </select>
+      </div>
+    </li>
+
+  </ul>
+
+</body>
+</html>

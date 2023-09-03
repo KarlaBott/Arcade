@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">read
+  <title>Guessing Game</title>
+  <link rel="stylesheet" href="styles/shared.css">
+  <link rel="stylesheet" href="styles/guessgame.css">
+  <script type="text/javascript" src='jsfiles/guessgame.js'></script>
+  <style>
+    #bgimage {
+      background-image: url('images/qmark.jpg');
+    }
+  </style>
+</head>
+
+<body class="gg" id="bgimage">
+  <section class="game-title">
+    <h1>NUMBER MASTERMIND</h1>
+  </section>
+  <section class="active-player"></section>
+  <section id="board-grid">
+    <div class="left-side">
+      <h2>Guess a number between 1 and 100 in five or less tries.</h2>
+      <div>
+        <span>Enter a number (1 to 100):</span>
+        <input type="text" id="user-input" required minlength="1" autoFocus onfocus="this.value=''" maxlength="3"
+          size="4" value="Num?">
+      </div>
+      <ul id="hints">HINT button will display 4 numbers, <br>one of which is the winning number.</ul>
+    </div>
+
+    <div class="right-side">
+      <h2>Past Guesses</h2>
+      <ul id="guesses"></ul>
+    </div>
+  </section>
+  <section class="banner"></section>
+  <section class="action-buttons">
+    <button id="btnReset">RESET Game</button>
+    <button id="btnHint">HINT</button>
+    <a href="index.html">Return To Arcade</a>
+  </section>
+</body>
+
+</html>

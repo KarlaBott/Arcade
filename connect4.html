@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connect Four</title>
+  <link rel="stylesheet" href="styles/shared.css">
+  <link rel="stylesheet" href="styles/connect4.css">
+  <script type="text/javascript" src='jsfiles/connect4.js'></script>
+  <style>
+    #bgimage {
+      background-image: url('images/brick.jpg');
+    }
+  </style>
+</head>
+
+<body class="bg" id="bgimage">
+  <section class="game-title">
+    <h1>CONNECT FOUR</h1>
+  </section>
+
+  <section class="active-player">Current player is: -
+  </section>
+  <section id="board-space">
+    <ul class="empty"></ul>
+    <ul>
+      <li id="instruct" class="top-row">
+        Click on the top row of the board to drop a playing piece.
+      </li>
+      <li class="dropdown">
+        <div id="color1"></div>
+        <div>
+          <label>Player 1 color:</label><br />
+          <select id="select1"></select>
+        </div>
+      </li>
+      <li class="dropdown">
+        <div id="color2"></div>
+        <div>
+          <label>Player 2 color:</label><br />
+          <select id="select2"></select>
+        </div>
+      </li>
+    </ul>
+    <section id="board-grid"></section>
+    <ul class="empty"></ul>
+  </section>
+
+  <section class="banner"></section>
+  <section class="action-buttons">
+    <button id="btnReset">RESET Game</button>
+    <a href="index.html">Return To Arcade</a>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+body, .banner {
+  color: rgb(246, 239, 220);
+}
+#board-grid {
+  align-content: center;
+  align-items: center;
+  box-shadow: 0 0 0 10px black;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3em;
+  font-weight: bold;
+  height: 260px;  width: 900px;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+.left-store, .right-store {
+  height: 260px;  width: 1258651px;
+  background-color: lightgray;
+  border: 2px solid red;
+  font-weight: bolder;
+  color: black;
+}
+.left-pit, .right-pit {
+  background-color: lightcoral;
+  border: 3px solid lightcoral;
+  height: 230px;  width: 100px;
+  border-radius: 100%;
+  margin-top: 15px;
+  margin-left: 18px;
+  line-height: 230px;
+}
+
+.pit-space {    /* egg carton grid  for the 12 play spaces */
+  display: grid;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  grid-template-columns: repeat(6, minmax(100px,1fr));
+  grid-template-rows: 50% 50%;
+  height: 260px;  width: 600px;
+  margin: 0;
+  background-color: lightgray;
+  border: 2px solid red;
+  color:black;
+}
+.pit-item {
+  height: 90px;  width: 75px;
+  border-radius: 100%;
+  background-color: lightcoral;
+  border: 3px solid lightcoral;
+  margin-top: 15px;
+  margin-left: 10px;
+  line-height: 90px;
+}
+
+.in-play {
+  border: 3px solid blue;
+}
+
+.winner-border {
+  border: 5px solid yellow;
+}
+.active-player {
+  font-weight: bold;
+  font-style: italic;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* @media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+} */

@@ -1,0 +1,47 @@
+.arcade-buttons {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  margin-right: 100px;
+}
+
+#hdr-options {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+#hdr-top {
+  font-size: 3em;
+  color:red;
+  text-shadow: 5px 5px 8px rgba(0,0,0,.4);
+  padding: 10px;
+}
+
+#main-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+ul, input {
+  font-size: 1.5rem;
+  font-style: italic;
+  padding: 4px 4px;
+  color:blue;
+}
+ul {
+  margin: 30px;
+  font-weight: bolder;
+  list-style-type: none;
+  color: red;
+}
+li {
+  margin:30px;
+}
+input {
+  text-align: left;
+}
+span {
+  background-color: rgb(195, 226, 245, .5);
+}

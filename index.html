@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARCADE GAMES</title>
+  <link rel="stylesheet" href="styles/shared.css">
+  <link rel="stylesheet" href="styles/index.css">
+  <script type="text/javascript" src='jsfiles/index.js'></script>
+  <style>
+    #bgimage {
+      background-image: url('images/water.jpg');
+    }
+  </style>
+</head>
+
+<body class="bg" id="bgimage">
+  <section>
+    <h1 id="hdr-top">WELCOME &nbsp;&nbsp;TO &nbsp;&nbsp;A R C A D I A !</h1>
+    <h1 id="hdr-options">
+      <p>Enter player name(s)</p>
+      <p>Select a game to play</p>
+    </h1>
+  </section>
+  <hr>
+
+  <div id="main-display">
+    <ul>
+      <li>
+        <span>Player 1: &nbsp;&nbsp;</span>
+        <input type="text" id="p1name" required minlength="1" onfocus="this.value=''" maxlength="15" size="15">
+      </li>
+      <li>
+        <span>Player 2: &nbsp;&nbsp;</span>
+        <input type="text" id="p2name" required minlength="1" onfocus="this.value=''" maxlength="15" size="15">
+      </li>
+    </ul>
+    <section class="arcade-buttons">
+      <a href="tictactoe.html">TIC TAC TOE</a>
+      <a href="connect4.html">CONNECT FOUR</a>
+      <a href="mancala.html">MANCALA</a>
+      <a href="guessgame.html">NUMBER MASTERMIND</a>
+      <a href="wham.html">WHACK-A-MOLE</a>
+      <a id="test-stuff" class="hide" href="aplayer.html">TEST Player Info</a>
+    </section>
+  </div>
+
+  <hr>
+</body>
+
+</html>
