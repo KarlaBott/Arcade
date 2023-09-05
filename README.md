@@ -1,3 +1,7 @@
+# DEPLOYED on Netlify link to this GitHub respository:
+
+https://comfy-rabanadas-99079b.netlify.app/
+
 ## How to start up the Arcade from VS Code
 
 Have a web browser open
